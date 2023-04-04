@@ -52,3 +52,11 @@
               row = rand(2);
               _results1.push(gfx.drawSprite(col, row, x * 24, y * 24));
             }
+            return _results1;
+          })());
+        }
+        return _results;
+      });
+    }
+  };
+
