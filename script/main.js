@@ -29,3 +29,9 @@
     }
   };
 
+  game = {
+    init: function() {
+      if (!gfx.init()) {
+        alert("Could not set up game canvas!");
+        return;
+      }
