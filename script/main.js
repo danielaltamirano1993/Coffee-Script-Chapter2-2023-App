@@ -24,3 +24,8 @@
         return onload();
       };
     },
+    drawSprite: function(col, row, x, y) {
+      return this.ctx.drawImage(this.sprites, col * 24, row * 24, 24, 24, x, y, 24, 24);
+    }
+  };
+
