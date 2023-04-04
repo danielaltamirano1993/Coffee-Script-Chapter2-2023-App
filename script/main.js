@@ -10,3 +10,10 @@
       if (!this.ctx) {
         return false;
       }
+      this.w = canvas.width;
+      this.h = canvas.height;
+      return true;
+    },
+    clear: function() {
+      return this.ctx.clearRect(0, 0, this.w, this.h);
+    },
