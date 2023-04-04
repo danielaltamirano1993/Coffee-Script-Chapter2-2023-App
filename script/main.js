@@ -17,3 +17,10 @@
     clear: function() {
       return this.ctx.clearRect(0, 0, this.w, this.h);
     },
+    load: function(onload) {
+      this.sprites = new Image();
+      this.sprites.src = "resources/sprites.png";
+      return this.sprites.onload = function() {
+        return onload();
+      };
+    },
