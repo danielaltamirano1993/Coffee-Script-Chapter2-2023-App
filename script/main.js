@@ -35,3 +35,10 @@
         alert("Could not set up game canvas!");
         return;
       }
+      gfx.clear();
+      return gfx.load(function() {
+        var c, col, rand, row, x, y, _i, _results;
+        c = gfx.ctx;
+        rand = function(max) {
+          return Math.floor(Math.random() * max);
+        };
