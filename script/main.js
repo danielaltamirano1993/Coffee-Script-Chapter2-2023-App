@@ -60,3 +60,5 @@
     }
   };
 
+  game.init();
+}).call(this);
